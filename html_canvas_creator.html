@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML Canvas Creator</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<style id="CSS-edit-element">
+</style>
+<div class="header-box">
+<div id="header-nav">
+	<ul class="header-nav" role="navigation">
+		<li><a id="file-tab">File</a></li>
+		<li><a id="tables-tab">Tables</a></li>
+		<li><a id="lists-tab">Lists</a></li>
+		<li><a id="divs-tab">Divs</a></li>
+		<li><a id="canvases-tab">Canvases</a></li>
+		<li><a id="other-tab">Other</a></li>
+	</ul>
+</div>
+<div id="insertCanvas">
+<div id="errorPrintArea"> 
+
+</div>
+<div class="insert-box-flex">
+<div class="insert-box-flex-item">
+<div id="canvasHoverArea">
+	
+</div>
+	</div>
+	<div class="insert-box-flex-item">
+Create a canvas:
+<ol>
+	<li id="coordinatesPreviewPrintArea"><strong>Specify coordinates:</strong></li>
+	<span id="coordinatesPrintArea">Saved coordinates:</span><button id="coordinates-submit-button" class="green-button">Submit</button>
+	<li id="canvasActionButtons"><strong>Use points to create:</strong></li>
+	<button id="canvas-line-button">Line</button>
+	<button id="canvas-arc-button">Arc</button>
+	<button id="canvas-circler-button">Circle (radius)</button>
+	<button id="canvas-circled-button">Circle (diameter)</button>
+	<li id="canvasCommit"><strong>Insert into editor:</strong></li>
+	<button id="canvas-commit-button" class="green-button">Save canvas</button>
+	<button id="canvas-clear-button" class="red-button">Clear and start again</button>
+</ol>
+</div>
+<div class="insert-box-flex-item">
+<form style="text-align:right;">
+At cursor: <input type="button" value="Insert CSS Class" class="orange-button" id="css-class-button">
+<input type="button" value="Insert CSS ID" class="orange-button" id="css-id-button">
+</form>
+<br>
+	</div>
+</div>
+	</div>
+	</div>
+<textarea id="document-box" class="document-box">
+</textarea>
+<form autocomplete="on">
+<input type="button" value="Preview" class="blue-button" id="commit-preview">
+<input type="button" value="Clear Preview" class="red-button" id="clear-preview">
+<input type="button" value="Edit CSS" class="orange-button" id="css-edit-button">
+<input type="button" value="Clear CSS" class="orange-button" id="css-clear-button">
+</form>
+
+<div id="preview-box" class="preview-box">
+
+</div>
+
+
+<script type="text/javascript" src="insert.js">
+</script>
+</body>
+</html>
