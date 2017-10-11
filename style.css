@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* Main SplitJS editor stylesheet */
+/* Created in 2017 by Brandon Bell in the United States of America. All rights reserved. */
+
+	.header-box {
+		width: 100%;
+		height: 20%;
+	}
+
+	#header-nav {
+		margin-bottom: 5px;
+	}
+
+	.header-nav{
+		background-color: #D5D5D5;
+		list-style-type: none;
+		display: inline-flex;
+		width: 100%;
+	}
+
+	.header-nav a {
+		padding: 10px;
+		background-color: #D5D5D5;
+		color: black;
+	}
+
+	.header-nav a:hover {
+		color: #9E9E9E;
+		text-decoration: none;
+	}
+
+	.header-nav a:active {
+		color: #484848;
+	}
+
+	
+	.document-box {
+		width: 100%;
+		height: 80%;
+	}
+	
+	.insert-box-flex {
+		display: flex;
+		display: -webkit-flex;
+		align-items: flex-end;
+		width: 100%;
+		
+	}
+	
+	.insert-box-flex-item {
+		width: 500px;
+		
+	}
+
+	.red-button {
+		color: red;
+	}
+	
+	.green-button {
+		color: green;
+	}
+
+	.blue-button {
+		color: blue;
+	}
+
+	.orange-button {
+		color: orange;
+	}
+	
+	#errorPrintArea {
+		width: 100%;
+		text-align: center;
+	}
+
+	.error-green {
+		border: 1px solid black;
+		background-color:#BDE8C5; 
+	}
+
+	.error-red {
+		border: 1px solid black;
+		background-color:#E2AFB0;
+	}
+	
+	#document-box {
+		width: 100%;
+		min-height: 400px;
+	}
+	
+	a:active {
+		text-decoration: underline;
+	}
+	
+	a:hover {
+		text-decoration: underline;
+	}

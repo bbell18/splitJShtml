@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML Table Creator Tool</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<style id="CSS-edit-element">
+</style>
+<div class="header-box">
+<div id="header-nav">
+	<ul class="header-nav" role="navigation">
+		<li><a id="file-tab">File</a></li>
+		<li><a id="tables-tab">Tables</a></li>
+		<li><a id="lists-tab">Lists</a></li>
+		<li><a id="divs-tab">Divs</a></li>
+		<li><a id="canvases-tab">Canvases</a></li>
+		<li><a id="other-tab">Other</a></li>
+	</ul>
+</div>
+<div id="insertTable">
+<div id="errorPrintArea"> 
+
+</div>
+<div class="insert-box-flex">
+<div class="insert-box-flex-item">
+<form autocomplete="off">
+	Start New Table:
+	<input type="text" name="inputNewTable" id="inputNewTable">
+</form>
+<br>
+<strong>Preview:</strong>
+<br>
+<code id="tablePrintArea">&lt;table&gt;&lt;tr&gt;</code>
+<code>&lt;/tr&gt;&lt;/table&gt;</code>
+<br>
+<form>
+<input type="button" value="Insert" class="green-button" id="commit-table">
+<input type="button" value="Clear" class="red-button" id="clear-table">
+<input type="button" value="Add &lt;/table&gt; tag" class="blue-button" id="tableendtag-table">
+	</form>
+	</div>
+<div class="insert-box-flex-item">	
+<form autocomplete="off">
+	Add New Row:
+	<input type="text" name="inputNewRow" id="inputNewRow">
+</form>
+<br>
+<strong>Preview:</strong>
+<br>
+<code id="rowPrintArea">&lt;tr&gt;</code>
+<code>&lt;/tr&gt;</code>
+<br>
+<form>
+<input type="button" value="Insert" class="green-button" id="commit-row">
+<input type="button" value="Clear" class="red-button" id="clear-row">
+<input type="button" value="Add &lt;/table&gt; tag" class="blue-button" id="tableendtag-row">
+	</form>
+	</div>
+</div>
+</div>
+<form style="text-align:right;">
+At cursor: <input type="button" value="Insert CSS Class" class="orange-button" id="css-class-button">
+<input type="button" value="Insert CSS ID" class="orange-button" id="css-id-button">
+</form>
+<br></div>
+<textarea id="document-box" class="document-box">
+</textarea>
+<form autocomplete="on">
+<input type="button" value="Preview" class="blue-button" id="commit-preview">
+<input type="button" value="Clear Preview" class="red-button" id="clear-preview">
+<input type="button" value="Edit CSS" class="orange-button" id="css-edit-button">
+<input type="button" value="Clear CSS" class="orange-button" id="css-clear-button">
+</form>
+<div id="preview-box" class="preview-box">
+
+</div>
+
+<script type="text/javascript" src="insert.js">
+</script>
+</body>
+</html>
